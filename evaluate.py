@@ -12,7 +12,7 @@ if __name__ == "__main__":
     print(f"JSON schema written to {schema_path / 'motor_request.json'}")
     print("\n#### Example JSON generated from the Model ####")
     model_instance = models.Model(
-        task="move",
+        task="/motor_act",
         qid=1,
         motor=models.Motor(
             steppers=[
