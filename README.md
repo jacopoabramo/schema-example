@@ -20,6 +20,12 @@ python -m venv
 .venv\Scripts\activate
 ```
 
+In the active environment, install the dependencies:
+
+```
+pip install datamodel-code-generator pydantic
+```
+
 ## Usage
 
 There are two main scritps:
