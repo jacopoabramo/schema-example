@@ -1,0 +1,1 @@
+A small example on how to generate JSON documents from `pydantic` and base schemas.
