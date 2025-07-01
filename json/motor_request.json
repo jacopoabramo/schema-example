@@ -1,0 +1,16 @@
+{
+    "task": "/motor_act",
+    "qid": 4,
+    "motor": {
+        "steppers": [
+            {
+                "stepperid": 1,
+                "position": -20090,
+                "speed": -20000,
+                "isabs": 0,
+                "isaccel": 1,
+                "accel": 10000
+            }
+        ]
+    }
+}

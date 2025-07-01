@@ -1,0 +1,78 @@
+{
+  "$defs": {
+    "Motor": {
+      "properties": {
+        "steppers": {
+          "items": {
+            "$ref": "#/$defs/Stepper"
+          },
+          "title": "Steppers",
+          "type": "array"
+        }
+      },
+      "required": [
+        "steppers"
+      ],
+      "title": "Motor",
+      "type": "object"
+    },
+    "Stepper": {
+      "properties": {
+        "stepperid": {
+          "title": "Stepperid",
+          "type": "integer"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        },
+        "speed": {
+          "title": "Speed",
+          "type": "integer"
+        },
+        "isabs": {
+          "title": "Isabs",
+          "type": "integer"
+        },
+        "isaccel": {
+          "title": "Isaccel",
+          "type": "integer"
+        },
+        "accel": {
+          "title": "Accel",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "stepperid",
+        "position",
+        "speed",
+        "isabs",
+        "isaccel",
+        "accel"
+      ],
+      "title": "Stepper",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "task": {
+      "title": "Task",
+      "type": "string"
+    },
+    "qid": {
+      "title": "Qid",
+      "type": "integer"
+    },
+    "motor": {
+      "$ref": "#/$defs/Motor"
+    }
+  },
+  "required": [
+    "task",
+    "qid",
+    "motor"
+  ],
+  "title": "Model",
+  "type": "object"
+}
